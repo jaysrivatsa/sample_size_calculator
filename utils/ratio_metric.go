@@ -1,9 +1,8 @@
 package utils
 
 import (
-	"math"
-
 	"github.com/jaysrivatsa/sample_size_calculator/models"
+	"math"
 )
 
 func SampleSizeRatio(r models.RatioRequest) float64 {
