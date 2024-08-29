@@ -1,15 +1,12 @@
 # Sample Size Computation
-While performing an AB experiment, the most importing thing to do is
+While performing an AB experiment, the most importing thing to do are
 1. Decide the randomisation unit
 2. Decide the metrics
 3. Compute the sample size needed to power the test
 
-This repo focuses on computing the sample size needed to power the test. Below are a few metric types
-* Additive
-* Ratio
-* Proportion
+This repo focuses on how to compute sample size needed to power the test.
 
-# Types of metric
+# Types of metrics
 
 ### Additive metric
 Metrics which are computed per randonmisation unit are known as additive metric. 
@@ -62,6 +59,9 @@ ratio_request = {
 ### Proportion metric
 Metrics in which there is a binary success criteria
 For example: If randomisation unit of a test is user, then reactivatation rate (reacted users/total users) would be a proportion metric
+
+Stats needed for computing sample size
+* Proportion value
 
 ```python
 prop_request = {
