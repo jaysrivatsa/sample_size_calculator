@@ -1,0 +1,15 @@
+POST http://localhost:8080/ratio
+Content-type: application/json
+
+
+{
+    "nummean": 10,
+    "denmean": 2,
+    "numstd": 5,
+    "denstd": 1,
+    "covv": 0.7,
+    "mde": 0.05,
+    "alpha": 0.05,
+    "power": 0.8,
+    "two_tailed": true
+}
