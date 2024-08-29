@@ -38,8 +38,8 @@ example: If the randomisation unit of a test is user, then amount_spent/total_re
 Stats needed for computing the sample size-
 * numerator mean
 * denominator mean
-* numberator std
-* denominator std
+* numerator standard deviation
+* denominator standard deviation
 * covariance between numberator and denominator
 
 **Sample request**
