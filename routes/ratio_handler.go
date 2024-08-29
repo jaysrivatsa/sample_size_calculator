@@ -2,7 +2,6 @@ package routes
 
 import (
 	"net/http"
-
 	"github.com/gin-gonic/gin"
 	"github.com/jaysrivatsa/sample_size_calculator/models"
 	"github.com/jaysrivatsa/sample_size_calculator/utils"
