@@ -1,0 +1,11 @@
+POST http://localhost:8080/proportion
+Content-type: application/json
+
+
+{
+    "prop": 0.20,
+    "mde": 0.05,
+    "alpha": 0.05,
+    "power": 0.8,
+    "two_tailed": true
+}
