@@ -11,7 +11,6 @@ import (
 func proportionHandler(ctx *gin.Context) {
 	var request models.ProportionRequest
 	err := ctx.ShouldBind(&request)
-	log.Println(request)
 	if err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"message": "Invalid request", "errot": "unable to parse request"})
 		return
