@@ -1,18 +1,19 @@
 # Sample Size Computation
-While performing an AB experiment, the most importing thing to do are
+While performing an AB experiment, the following steps are imperative-
 1. Decide the randomisation unit
-2. Decide the metrics
+2. Choose the metrics - Primary, Secondary, Monitoring and Guardrail metrics
 3. Compute the sample size needed to power the test
 
-This repo focuses on how to compute sample size needed to power the test.
+This repo focuses on computing the sample size needed to power the test.
 
 # Types of metrics
 
 ### Additive metric
 Metrics which are computed per randonmisation unit are known as additive metric. 
-For example: If the randomisation unit of a test is user, then dollar spent/user would be an additive metric
 
-Stats needed for computing sample size
+example: If the randomisation unit of a test is user, then amount_spent/user would be an additive metric
+
+Stats needed for computing sample size-
 * Metric mean
 * Metric standard deviation
 
@@ -30,10 +31,11 @@ additive_request = {
 ```
 
 ### Ratio metric
-Metrics which is a ratio of two additive metrics is know as a ratio metrics.
-For example: If the randomisation unit of a test is user, then dollar spent/total requests would be a ratio metric
+Metrics which are a ratio of two additive metrics are know as ratio metrics.
 
-Stats needed for computing sample size
+example: If the randomisation unit of a test is user, then amount_spent/total_requests would be a ratio metric
+
+Stats needed for computing the sample size-
 * numerator mean
 * denominator mean
 * numberator std
@@ -57,10 +59,11 @@ ratio_request = {
 ```
 
 ### Proportion metric
-Metrics in which there is a binary success criteria
-For example: If randomisation unit of a test is user, then reactivatation rate (reacted users/total users) would be a proportion metric
+Metrics which compose of a binary success criteria (a yes or no)
 
-Stats needed for computing sample size
+example: If randomisation unit of a test is user, then activatation rate (is_user_activated_flag/total users) would be a proportion metric
+
+Stats needed for computing the sample size-
 * Proportion value
 
 ```python
@@ -76,7 +79,7 @@ prop_request = {
 
 ## API Documentation
 
-There is a separate endpoint for each kind of metrics mentioned above
+There is a separate endpoint for each type of metrics mentioned above
 
 Here is the sample code
 
